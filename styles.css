@@ -329,13 +329,27 @@ ul { list-style: none; }
 .cta-band__text p { margin: 12px 0 0; }
 
 /* Legal pages (terms / privacy) */
-.legal h2 { font-size: 1.25rem; margin: 32px 0 10px; }
 .legal p { color: var(--body); }
 .legal a { text-decoration: underline; }
 .legal__list { display: grid; gap: 8px; margin: 0 0 16px; padding-left: 0; }
 .legal__list li { display: flex; gap: 10px; }
 .legal__list li::before { content: "\2022"; color: var(--purple); font-weight: 700; }
 .legal__note { margin-top: 28px; padding: 16px 18px; background: var(--bg-soft); border-radius: var(--radius-sm); color: var(--muted); font-size: 0.92rem; }
+
+/* Goal / target icon before a section heading */
+.goal-icon {
+  display: inline-grid; place-items: center; width: 56px; height: 56px; border-radius: 16px;
+  margin: 0 auto 14px; background: linear-gradient(135deg, var(--purple), var(--blue)); color: #fff;
+}
+.goal-icon svg { width: 28px; height: 28px; }
+
+/* Larger card icon (Explore Our Solution) */
+.card__icon--lg { width: 72px; height: 72px; border-radius: 18px; }
+.card__icon--lg svg { width: 38px; height: 38px; }
+
+/* Equal-height explore cards so the blue links align on one level */
+.explore-card { display: flex; flex-direction: column; }
+.explore-card .link { margin-top: auto; }
 
 /* 6) ANIMATIONS ------------------------------------------------------------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
