@@ -356,6 +356,28 @@ ul { list-style: none; }
 .explore-card { display: flex; flex-direction: column; }
 .explore-card .link { margin-top: auto; }
 
+/* Blue round / white tick check (Everything the Pod Handles) */
+.check--blue { background: var(--blue); color: #fff; }
+.check--blue svg { width: 14px; height: 14px; }
+
+/* Pod grid: 4 columns, 2 items each */
+.pod-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.pod-col { display: grid; gap: 16px; }
+.pod-item { display: flex; align-items: flex-start; gap: 12px; font-weight: 500; color: var(--ink); }
+
+/* Pricing cards (3 columns, Most Popular highlighted) */
+.price-grid { align-items: stretch; }
+.price-card { display: flex; flex-direction: column; align-items: flex-start; text-align: left; position: relative; }
+.price-card__icon { width: 52px; height: 52px; border-radius: 14px; background: var(--purple-light); color: var(--blue); display: grid; place-items: center; margin-bottom: 16px; }
+.price-card__icon svg { width: 26px; height: 26px; }
+.price-card h3 { font-size: 1.05rem; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+.price-card__amount { font-size: 2.2rem; font-weight: 800; color: var(--ink); line-height: 1; margin-bottom: 14px; }
+.price-card__amount span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+.price-card p { flex: 1 0 auto; }
+.price-card .btn { margin-top: 16px; }
+.price-card--popular { border: 2px solid var(--blue); box-shadow: var(--shadow-lg); }
+.price-card__badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 5px 14px; border-radius: 100px; white-space: nowrap; }
+
 /* 6) ANIMATIONS ------------------------------------------------------------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -368,6 +390,8 @@ ul { list-style: none; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__media { order: -1; }
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .pod-grid { grid-template-columns: repeat(2, 1fr); }
+  .price-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
 }
