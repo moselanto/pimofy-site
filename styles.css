@@ -266,9 +266,11 @@ ul { list-style: none; }
 .cta-band p { color: rgba(255,255,255,0.85); max-width: 600px; margin: 12px auto 26px; }
 
 /* Article cards (Resources) */
-.article { padding: 0; overflow: hidden; }
+.article { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
 .article__img { aspect-ratio: 16/9; width: 100%; object-fit: cover; background: linear-gradient(135deg, var(--purple-light), #fff); }
-.article__body { padding: 22px; }
+.article__body { padding: 22px; display: flex; flex-direction: column; flex: 1 1 auto; }
+.article__body h3 { margin-bottom: 12px; }
+.article__body .link { margin-top: auto; }
 .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--orange); margin-bottom: 8px; }
 
 /* Forms */
