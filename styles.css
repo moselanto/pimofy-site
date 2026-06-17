@@ -267,7 +267,7 @@ ul { list-style: none; }
 
 /* Article cards (Resources) */
 .article { padding: 0; overflow: hidden; }
-.article__img { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--purple-light), #fff); }
+.article__img { aspect-ratio: 16/9; width: 100%; object-fit: cover; background: linear-gradient(135deg, var(--purple-light), #fff); }
 .article__body { padding: 22px; }
 .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--orange); margin-bottom: 8px; }
 
@@ -384,6 +384,20 @@ ul { list-style: none; }
 
 /* Contact detail cards */
 .contact-detail .stat__label { margin: 12px 0 6px; }
+
+/* Article pages */
+.article-hero { padding-bottom: 8px; }
+.article-hero h1 { margin: 14px 0 12px; }
+.article-meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.article-hero__img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); margin-top: 8px; aspect-ratio: 16/9; object-fit: cover; }
+.article-body { font-size: 1.06rem; }
+.article-body .article-lead { font-size: 1.2rem; color: var(--ink); font-weight: 500; margin-bottom: 28px; }
+.article-body h2 { font-size: 1.5rem; margin: 36px 0 12px; }
+.article-body p { margin-bottom: 18px; }
+.article-body ul { margin: 0 0 18px; display: grid; gap: 10px; }
+.article-body li { display: flex; gap: 10px; }
+.article-body li::before { content: "\2022"; color: var(--purple); font-weight: 700; flex: 0 0 auto; }
+.article-body a { text-decoration: underline; font-weight: 600; }
 
 /* Resources: article card icons (replace image placeholders) */
 .article__icon {
