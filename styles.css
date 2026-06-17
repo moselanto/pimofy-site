@@ -357,10 +357,10 @@ ul { list-style: none; }
 .card__icon--xl svg { width: 52px; height: 52px; }
 
 /* Belief cards (About) — icon to the left of the title */
-.belief-card { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; align-items: start; }
-.belief-card .card__icon { grid-row: span 2; margin-bottom: 0; }
-.belief-card h3 { margin-bottom: 6px; }
-.belief-card p { margin: 0; }
+.belief-card { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; row-gap: 10px; align-items: center; }
+.belief-card .card__icon { grid-row: auto; margin-bottom: 0; }
+.belief-card h3 { margin-bottom: 0; }
+.belief-card p { grid-column: 1 / -1; margin: 0; }
 
 /* Stat cards (About — The Numbers) */
 .stat-card .stat__num { color: var(--blue); }
